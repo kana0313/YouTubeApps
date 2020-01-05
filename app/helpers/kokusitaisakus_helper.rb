@@ -1,0 +1,2 @@
+module KokusitaisakusHelper
+end
