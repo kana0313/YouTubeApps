@@ -1,6 +1,10 @@
 @import "./reset";
 @import "./haikei";
-@import "./haikei";
+@import "./header";
+// タイトルの可愛い文字のために入れた↓
+@import "style";
+
+// フォントオーサム入れたから記述した↓
 @import "font-awesome-sprockets";
 @import "./font-awesome";
 
