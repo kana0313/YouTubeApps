@@ -1,0 +1,10 @@
+@import "./reset";
+@import "./haikei";
+@import "./haikei";
+@import "font-awesome-sprockets";
+@import "./font-awesome";
+
+* {
+  box-sizing: border-box;
+}
+//↑で paddingやborderの設定を行っても、要素の大きさがwidthやheightで指定したサイズのまま変わらなくなります。

@@ -1,0 +1,46 @@
+!!
+%html
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %title YouTubeApps
+    = csrf_meta_tags
+    = csp_meta_tag
+    = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload'
+    = javascript_pack_tag 'application', 'data-turbolinks-track': 'reload'
+  %body
+    %header.header
+      .header__bar.row
+        %h1.grid-6
+          %a{:href => "/"} 美容師国家試験対策.kana
+        - if user_signed_in?
+          .user_nav.grid-6
+            = link_to "ログアウト", destroy_user_session_path, method: :delete
+            %a.post{:href => "/posts/new"} 投稿する
+        - else
+          .grid-6
+            = link_to "ログイン", new_user_session_path, class: 'post'
+            = link_to "新規登録", new_user_registration_path, class: 'post'
+
+-# Copyright (c) Mohammad Abdul Mohaiman
+-# @mohaiman
+-# Released under the MIT license
+-# http://opensource.org/licenses/mit-license.php
+
+
+.context
+  %h1 Pure Css Animated Background
+  = yield
+.area
+  %ul.circles
+    %li
+    %li
+    %li
+    %li
+    %li
+    %li
+    %li
+    %li
+    %li
+    %li
+
+    

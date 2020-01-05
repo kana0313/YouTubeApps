@@ -1,0 +1,65 @@
+#wrapper
+  #container
+    .header
+      .headerLogo
+        = link_to "美容師国家試験対策.kana", root_path
+        
+
+      .headerSns
+        .headrSnsBtn
+          = link_to "https://www.youtube.com/channel/UCb_2hEWbP7T-XbvSKjPqs2A?view_as=subscriber", class: "headerSnsBtn" do
+            = icon('fab', 'youtube')
+            
+        
+          = link_to "https://www.instagram.com/", class: "headerSnsBtn" do
+            = icon('fab', 'instagram')
+            
+
+          = link_to "https://www.tiktok.com/ja", class: "headerSnsBtn" do
+            %img{:src => "https://img.icons8.com/color/48/000000/tiktok.png"}/
+
+            
+          = link_to "https://twitter.com/", class: "headerSnsBtn" do
+            = icon('fab', 'twitter')
+            
+    .inner
+      %ul.move
+        %li.fl プリント
+        %li.fl
+          %a{href: "https://www.youtube.com/channel/UCb_2hEWbP7T-XbvSKjPqs2A?view_as=subscriber"} 動画
+        %li.fl お仕事依頼
+        %li.fl Cruelty Free
+
+    .box1
+      .slider
+        %img.c{alt: "過去問",  src: "/assets/suraido.png" }
+        %img.c{alt: "過去問",  src: "/assets/suraido2.png" }
+        %img.c{alt: "過去問",  src: "/assets/suraido3.png"}
+
+    .box2
+      .kamoku
+        %ul.kamokuA
+          %li.ka 関係法規
+          %li.ka 
+            -# = link_to "衛生管理", tweets_eisei_path
+          %li.ka 美容保健
+        %ul.kamokuB
+          %li.ka 香粧品
+          %li.ka 美容理論
+          %li.ka 文化論   
+
+
+    .footer
+      %ul.moveA
+        %li.fo プリント
+        %li.fo 動画
+        %li.fo お仕事依頼
+      %ul.moveB
+        %li.fo Instagram
+        %li.fo Twitter
+        %li.fo youtube
+        %li.fo 
+          -# = link_to "⭐︎", tweets_new_path
+
+      
+
