@@ -1,6 +1,6 @@
 @import "./reset";
-@import "./haikei";
 @import "./header";
+@import "./index";
 // タイトルの可愛い文字のために入れた↓
 @import "style";
 
@@ -8,6 +8,7 @@
 @import "font-awesome-sprockets";
 @import "./font-awesome";
 
+@import "./haikei";
 * {
   box-sizing: border-box;
 }

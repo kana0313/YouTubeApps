@@ -57,3 +57,5 @@ gem 'kaminari'
 gem 'devise'
 gem 'haml-rails'
 gem 'font-awesome-sass'
+# ↓スライダー入れる
+gem 'jquery-rails'

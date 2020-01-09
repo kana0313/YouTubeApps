@@ -7,53 +7,24 @@
     = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload'
     = javascript_pack_tag 'application', 'data-turbolinks-track': 'reload'
   %body
-  #wrapper
-    #container
-      .header
-        .headerLogo
-          = link_to "美容師国家試験対策.kana", root_path
-        
-        .headerSns
-          .headrSnsBtn
-            = link_to "https://www.youtube.com/channel/UCb_2hEWbP7T-XbvSKjPqs2A?view_as=subscriber", class: "headerSnsBtn" do
-              = icon('fab', 'youtube')
-              
-          
-            = link_to "https://www.instagram.com/", class: "headerSnsBtn" do
-              = icon('fab', 'instagram')
-              
-            = link_to "https://twitter.com/", class: "headerSnsBtn" do
-              = icon('fab', 'twitter')
-      
-      .header__bar.row
-        - if user_signed_in?
-          .user_nav.grid-6
-            = link_to "ログアウト", destroy_user_session_path, method: :delete
-            %a.post{:href => "/posts/new"} 投稿する
-        - else
-          .grid-6
-            = link_to "ログイン", new_user_session_path, class: 'post'
-            = link_to "新規登録", new_user_registration_path, class: 'post'
-
 -# Copyright (c) Mohammad Abdul Mohaiman
 -# @mohaiman
 -# Released under the MIT license
 -# http://opensource.org/licenses/mit-license.php
 
-
 .context
-  = yield
-.area
-  %ul.circles
-    %li
-    %li
-    %li
-    %li
-    %li
-    %li
-    %li
-    %li
-    %li
-    %li
+  .area
+    = yield
+    %ul.circles
+      %li
+      %li
+      %li
+      %li
+      %li
+      %li
+      %li
+      %li
+      %li
+      %li
 
     

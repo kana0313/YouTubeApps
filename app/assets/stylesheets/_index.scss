@@ -1,0 +1,170 @@
+#wrapper{
+  background-image: url("005-subtle-light-patterns.jpg");
+  background-repeat: repeat; 
+  width: 100%;
+  height: 100vh;
+}
+
+#container{
+  
+  width:970px;
+  height:100vh;
+  margin: 0 auto;
+  
+}
+
+.header{
+  height: 93px;
+  display:flex;
+  border-bottom: 3px solid #3366CC;
+  position: relative;
+}
+.headerLogo{
+  color: #3366CC;
+  font-family: 'kawaii';
+  // font-family: 'M PLUS Rounded 1c', sans-serif;
+  font-size: 40px;
+  position: absolute;
+  bottom: 3px;
+  left: 12px;
+}
+
+.headerSns{
+  margin: 0 0 0 auto;
+  display:flex;
+  &Btn{
+    display: block;
+    display: inline-block;
+    position: relative;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: #FFF;
+    width: 50px;
+    height: 50px;
+    line-height: 30px;
+    padding: 5px;
+    font-size: 25px;
+    border-radius: 50%;
+    text-align: center;
+    font-weight: bold;
+    box-shadow: inset 0 2px 0px rgba(255, 255, 255, 0.25), inset 0 -2px 0px rgba(0, 0, 0, 0.18);
+    transition: .2s;
+    line-height: 30px;
+    background: #1da1f3;
+    border: solid 5px #1da1f3;
+  }
+  &Btn:hover{
+    box-shadow: none;
+  }
+}
+
+.inner{
+width: 100%;
+border-bottom: solid 3px #3366CC;
+background-color: rgb(177, 228, 248);
+
+}
+.move{
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+}
+
+.fl{
+   flex:25%;
+   height: 50px;
+   font-size: 20px;
+   text-align:center;
+   line-height: 50px;
+   color:#000080;
+   
+}
+.box1 {
+  width: 100%;
+  background-color: #F0FFFF;
+}
+.slick-list {
+  height: 500px;
+  width: 500px; 
+  margin: 0 auto !important;
+}
+
+.fa.fa-angle-left.arrow.arrow-left.slick-arrow{
+  display: none !important;
+}
+
+.slick-slider{
+  height: 350px;
+}
+.slick-dots{
+  display: none !important;
+}
+.slick-track{
+  position: relative;
+  top: 30px !important;
+}
+.box2{
+  background-color: #F0FFFF;
+  height: 200px;
+  position: relative /*親要素はrelativeに*/
+}
+
+.kamoku {
+  width: 80%;
+  position: absolute;
+  top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    
+    color: #565656;
+    background: rgb(177, 228, 248);
+    box-shadow: 0px 0px 0px 10px rgb(177, 228, 248);
+    border: dashed 2px #c3eeff;
+    border-radius: 8px;
+}
+.kamokuA{
+  justify-content:center; /*センターに寄せる*/
+  display: block;
+  display:flex;    /* フレックスボックスにする */
+  
+}
+
+.kamokuB{
+  justify-content:center;
+  display: block;
+  display:flex;    /* フレックスボックスにする */
+  
+}
+
+.ka{
+  width: 33%;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  text-align-last: center;
+}
+
+.footer {
+  width: 100%;
+  height: 40px;
+  background-color:rgb(177, 228, 248);
+  border-bottom: 3px solid #3366CC;
+  border-top: 3px solid #3366CC;
+  display:flex; 
+  position: relative
+}
+
+.moveA{
+  position: absolute;
+  display:flex; 
+}
+
+.moveB{
+  position: absolute;
+  display:flex; 
+  bottom: 0;
+  right: 10px;
+}
