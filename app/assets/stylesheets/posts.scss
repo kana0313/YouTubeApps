@@ -1,3 +1,35 @@
-// Place all the styles related to the posts controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: https://sass-lang.com/
+.p_wrapper{
+  position: relative; 
+  z-index: 1;
+}
+.p_container{
+margin: 0 auto;
+width: 75%;
+
+}
+
+.p_header{
+  height: 93px;
+  display:flex;
+  border-bottom: 3px solid #3366CC;
+  position: relative;
+}
+table {
+  width:100%;
+  
+  }
+
+table th {/*table内のthに対して*/
+  padding: 10px;/*上下左右10pxずつ*/
+  text-align: center;
+}
+
+table td {/*table内のtdに対して*/
+  padding: 3px 2px;/*上下3pxで左右２px*/
+  text-align: center;
+}
+
+table th, table td {
+  border: solid 3px blanchedalmond;
+  /*実線 1px 黒*/
+}
