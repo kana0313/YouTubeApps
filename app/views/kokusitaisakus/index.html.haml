@@ -25,11 +25,21 @@
           %li.fl Cruelty Free
 
       .box1
-        .slider
-          %img.c{alt: "過去問",  src: "/assets/suraido.png" }
-          %img.c{alt: "過去問",  src: "/assets/suraido2.png" }
-          %img.c{alt: "過去問",  src: "/assets/suraido3.png"}    
-
+        -# .slider
+          -# %img.c{alt: "過去問",  src: "/assets/suraido.png" }
+          -# %img.c{alt: "過去問",  src: "/assets/suraido2.png" }
+          -# %img.c{alt: "過去問",  src: "/assets/suraido3.png"}    
+        %ul.slider
+          %li
+            %a{:href => "#"}
+              %img.c{:alt => "image01", :src => "/assets/suraido.png"}
+          %li
+            %a{:href => "#"}
+              %img.c{:alt => "image02", :src => "/assets/suraido2.png"}
+          %li
+            %a{:href => "#"}
+              %img.c{:alt => "image03", :src => "/assets/suraido3.png"}
+        
       .box2
         .kamoku
           %ul.kamokuA

@@ -17,7 +17,19 @@ require("channels")
 
 //= require rails-ujs
 //= require activestorage
-
-//= require_tree .
 //= require jquery
-//= require jquery_ujs
+//= require_tree .
+
+$(function() {
+  $('.slider').slick({
+    
+      prevArrow:'<i class="fa fa-angle-left arrow arrow-left"></i>',
+      nextArrow:'<i class="fa fa-angle-right arrow arrow-right"></i>',
+      dots: true,
+      autoplay: true,
+      autoplaySpeed: 3000,
+      speed: 800
+     
+  });
+});
+
