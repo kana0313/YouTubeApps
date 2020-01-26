@@ -6,7 +6,7 @@
 require("@rails/ujs").start()
 require("turbolinks").start()
 require("@rails/activestorage").start()
-require("channels")
+require("pages")
 
 // Uncomment to copy all static images under ../images to the output folder and reference
 // them with the image_pack_tag helper in views (e.g <%= image_pack_tag 'rails.png' %>)
@@ -18,18 +18,5 @@ require("channels")
 //= require rails-ujs
 //= require activestorage
 //= require jquery
+//= require jquery-ujs
 //= require_tree .
-
-$(function() {
-  $('.slider').slick({
-    
-      // prevArrow:'<i class="fa fa-angle-left arrow arrow-left"></i>',
-      // nextArrow:'<i class="fa fa-angle-right arrow arrow-right"></i>',
-      // dots: true,
-      // autoplay: true,
-      // autoplaySpeed: 3000,
-      // speed: 800
-     
-  });
-});
-

@@ -1,0 +1,2 @@
+module OsigotosHelper
+end

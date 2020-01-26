@@ -1,0 +1,19 @@
+私のホームページのご意見を聞かせてください<br> 
+<form method="POST" action="/asp/mailto.asp"> 
+<input type="hidden" name="toaddr" value="あなたのID@nas.ne.jp">
+内容はいかがでしたか？
+<select size="1" name="subject">
+  <option value="■意見:とてもよかった">とてもよかった</option>
+  <option value="■意見:まあまあだった">まあまあだった</option>
+  <option value="■意見:とくに良くも悪くもない">とくに良くも悪くもない</option>
+  <option value="■意見:あまりよくなかった">あまりよくなかった</option>
+  <option value="■意見:全くよくなかった">全くよくなかった</option>
+</select>（選んでください）<br>
+<br>
+その他気が付いたことなどを教えてください<br>  
+<textarea rows="4" name="body" cols="59"></textarea><br>
+あなたのメールアドレスをおしえてください<br>
+メールアドレス<input type="text" name="fromaddr" size="56"><br> 
+<input type="submit" value="このボタンを押して送信してください">  
+<input type="hidden" name="nextpage" value="/usr/あなたのID/abc/thanks.html"> 
+</form> 
